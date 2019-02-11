@@ -1,0 +1,275 @@
+:root{
+    --border-color: 1px solid #045bbe;
+}
+
+body
+{
+    height: 100vh;
+    background: #151519;
+}
+
+button
+{
+    outline: none;
+}
+button:hover:enabled
+{
+    background: #003d99;    
+    cursor: pointer;
+}
+
+button:hover::before:enabled
+{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 0.6;
+    transition: .7s;
+}
+
+button:hover::after:enabled
+{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6s;
+    transition: .7s;
+}
+
+button,
+[type="enabled"]
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #045bbe;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;    
+}
+
+[type="createButtonDisabled"]
+{
+    top: 50%;
+    left: 50%;
+    margin-bottom: 2px;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #FF0000;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;  
+    opacity: 0.4;    
+}
+
+
+[type="createButtonEnabled"]
+{
+    top: 50%;
+    left: 50%;
+    margin-bottom: 2px;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #045bbe;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;   
+}
+
+[type="langButton"]
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 75px;
+    height: 35px;
+    border: 1px solid #045bbe;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin-top: 5px;
+    margin: 2px;
+    float: left;
+}
+
+[type="langButtonSelected"]
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 75px;
+    height: 35px;
+    border: 1px solid rgb(9, 216, 2);
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin-top: 5px;
+    margin: 2px;
+    float: left;
+}
+
+[type="mergeButton"]
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 115px;
+    height: 35px;
+    border: 1px solid #045bbe;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;    
+    margin: 2px;
+    float: left;
+}
+
+[type="mergeButtonLoaded"]
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 115px;
+    height: 35px;
+    border: 1px solid rgb(9, 216, 2);
+    font-size: 14px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;    
+    margin: 2px;
+    float: left;
+}
+
+#container
+{
+    width: 1300px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subcontainerLeft
+{
+    width: 250px;    
+    margin: 5px;
+    float: left;
+}
+
+.subcontainerRight
+{
+    width: 1000px;
+    margin: 5px;
+    float: left;
+}
+
+.tileButton
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 90px;    
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden; 
+    margin: 10px;
+    margin-bottom: 10px;       
+}
+
+.tileButtonSmall
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 40px;    
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden; 
+    margin: 10px;
+    margin-bottom: 20px;       
+}
+
+.optionTile
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 125px;    
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden; 
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.bigTile
+{
+    top: 50%;
+    left: 50%;
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 175px;    
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden; 
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.Description
+{    
+    width: 950px;
+    height: 895px;
+    margin: 10px;
+    border: 1px solid #045bbe;
+    color: #ccc;    
+    border-radius: 4px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 30px;   
+    overflow: auto;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: pre-wrap;   
+    text-justify: auto; 
+}
+
+input[type=checkbox]
+{
+	height: 20px;
+    width: 20px; 	
+}
+
+input 
+{
+    width: 13px;
+    height: 13px;
+    padding: 0;    
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+  }

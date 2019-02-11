@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>LocalizationTool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {        
+        overflow: hidden;
+      }
+    </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="subcontainerLeft">
+      <div class="tileButton">
+        <button type="enabled" id="readJson">Load JSON file</button>
+      </div>
+      <div class="tileButton">
+        <button = disabled type="createButtonDisabled" id="createXLSX">Create XLSX from JSON</button>
+        <div><button type="langButtonSelected" class='xlsxLanguage' id="createXLSXPL">PL</button></div>
+        <div><button type="langButton" class='xlsxLanguage' id="createXLSXENG">ENG</button></div>
+        <div><button type="langButton" class='xlsxLanguage' id="createXLSXFR">3rd</button></div>
+      </div>
+      <div class="tileButton">
+        <button type="enabled" id="readXLSX">Load XLSX file</button>
+      </div>     
+      <!-- <div class="tileButton">
+        <button type="enabled" id="createTXT">Create TXT</button>        
+      </div> -->
+      <!-- <div class="tileButton">
+        <button type="enabled" id="replace">Replace regular expression</button>
+      </div>          -->
+      <div class="optionTile">
+        <button = disabled type="createButtonDisabled" id="createJson">Create JSON from XLSX</button>
+        <div><button type="langButtonSelected" class='jsonLanguage' id="createJsonPL">PL</button></div>
+        <div><button type="langButton" class='jsonLanguage' id="createJsonENG">ENG</button></div>
+        <div><button type="langButton" class='jsonLanguage' id="createJsonFR">3rd</button></div>
+        <button = disabled type="createButtonDisabled" id="createTXT">Create TXT from XLSX</button>   
+      </div>
+      <div class="bigTile">
+        <button = disabled type="createButtonDisabled" id="countWords">Count words</button>
+        <button = disabled type="createButtonDisabled" id="actorDialogs">Find actor dialogs</button>
+        <button = disabled type="createButtonDisabled" id="actorDialogsCreate">Create actor dialogs</button>
+        <button = disabled type="createButtonDisabled" id="replace">Replace regular expression</button>
+      </div>
+      <div class="bigTile">
+        <button = disabled type="createButtonDisabled" id="mergeXlsx"> Merge XLSX files</button>
+        <button = disabled type="createButtonDisabled" id="mergeActors">Merge Actors</button>
+        <button = disabled type="createButtonDisabled" id="mergeLocalization">Merge localization excels</button>
+        <div><button type="mergeButton" id="masterXlsx">Master XLSX</button></div>
+        <div><button type="mergeButton" id="slaveXlsx">Slave XLSX</button></div>
+      </div> 
+      <!-- <div class="tileButton">
+        <button type="enabled" id="mergeLocalization">Merge localization excels</button>
+      </div> -->
+      <div class="tileButton">
+        <button type="enabled" id="google">Upload file to GD</button>
+      </div>
+    </div>
+    <div class="subcontainerRight">
+      <div class="Description" id="description"></div>
+    </div>
+  </div>
+
+  <script>    
+    require('./reading/read-json-file')
+    require('./converting/convert-json-to-xlsx')
+    require('./converting/convert-xlsx-to-txt')
+    require('./reading/read-xlsx-file')
+    require('./converting/convert-xlsx-to-json')
+    require('./merging/merge-xlsx-files')
+    require('./additional-functionality/count-words.js')    
+    require('./additional-functionality/google-drive')        
+    require('./merging/merge-localizations')
+    require('./additional-functionality/actor-dialogs')
+    require('./additional-functionality/regular-expression')
+    require('./handlers/files-handler')    
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "localization-tool",
+  "version": "1.0.0",
+  "description": "Tool for making everyone's life easier",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/Polyslash/localization-tool"
+  },
+  "author": "KR",
+  "license": "proprietary",
+  "devDependencies": {
+    "electron": "^3.0.4",
+    "electron-packager": "^12.2.0",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "electron-prompt": "^1.2.0",
+    "exceljs": "^1.6.2",
+    "googleapis": "^34.0.0",
+    "jquery": "^3.3.1",
+    "jquery-steps": "^1.1.0",
+    "smalltalk": "^3.2.2",
+    "vex": "0.0.4"
+  }
+}

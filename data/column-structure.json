@@ -1,0 +1,27 @@
+{
+    "localization": [
+        { "header": "ID", "key": "1", "width": 30 },
+        { "header": "UNIT", "key": "2", "width": 20 },
+        { "header": "ACTOR", "key": "3", "width": 10 },
+        { "header": "GENDER", "key": "4", "width": 10 },
+        { "header": "POLISH", "key": "5", "width": 50 },
+        { "header": "STATUS", "key": "6", "width": 10 },
+        { "header": "COMMENTARY", "key": "7", "width": 30 },
+        { "header": "ENGLISH", "key": "8", "width": 50 },
+        { "header": "FRENCH", "key": "9", "width": 50 },
+        { "header": "PACK", "key": "10", "hidden": true }
+    ],
+
+    "actorDialogs": [
+        { "header": "KLUCZ", "key": "1", "width": 30 },
+        { "header": "AKTOR", "key": "2", "width": 20 },
+        { "header": "DIALOG ENG", "key": "3", "width": 60 }        
+    ],
+
+    "countWords": [
+        { "header": "AKTOR", "key": "1", "width": 30 },
+        { "header": "POLSKIE", "key": "2", "width": 30 },
+        { "header": "ANGIELKSIE", "key": "3", "width": 30 },
+        { "header": "SUMA", "key": "4", "width": 30 }  
+    ]
+}
